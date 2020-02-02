@@ -1,5 +1,3 @@
-const meta = require("./config/meta.json");
-
 module.exports = options => ({
   siteMetadata: {
     title: "Gatsby-theme-binder",
@@ -22,41 +20,6 @@ module.exports = options => ({
       options: {
         path: `${options.contentPath}/code/`
       }
-    },
-    `gatsby-transformer-sharp`,
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          `gatsby-remark-copy-linked-files`,
-          {
-            resolve: `gatsby-remark-prismjs`,
-            options: {
-              noInlineHighlight: true
-            }
-          },
-          {
-            resolve: `gatsby-remark-smartypants`,
-            options: {
-              dashes: "oldschool"
-            }
-          },
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 790,
-              linkImagesToOriginal: true,
-              sizeByPixelDensity: false,
-              showCaptions: true,
-              quality: 80,
-              withWebp: { quality: 80 }
-            }
-          },
-          `gatsby-remark-unwrap-images`
-        ]
-      }
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    }
   ]
 });
