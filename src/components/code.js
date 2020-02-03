@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { StaticQuery, graphql } from "gatsby";
+import EventsContext from "../context/server_events";
+
 import Jupyter from "./jupyter";
 
 function getFiles({ allCode }) {
@@ -11,30 +13,59 @@ function getFiles({ allCode }) {
   );
 }
 
-class CodeBlock extends React.Component {
-  state = {};
+const CodeBlock = ({ filename, lang }) => {
+  const { repo, branch, requestBinder, requestKernel } = useContext(
+    EventsContext
+  );
 
-  render() {
-    const { filename, lang, children } = this.props;
-    return (
-      <StaticQuery
-        query={codeQuery}
-        render={data => {
-          const files = getFiles(data);
-          const source = files[[filename]];
-          return (
-            <div>
-              <p>hey</p>
-              <Jupyter file={source} language={lang} />
-            </div>
-          );
-        }}
-      />
+  useEffect(() => {
+    requestBinder(repo, branch, `https://mybinder.org`).then(settings =>
+      requestKernel(settings)
     );
-  }
-}
+  }, []);
+
+  return (
+    <StaticQuery
+      query={codeQuery}
+      render={data => {
+        const files = getFiles(data);
+        const source = files[[filename]];
+        return (
+          <div>
+            <p>hey</p>
+            <Jupyter file={source} language={lang} />
+          </div>
+        );
+      }}
+    />
+  );
+};
 
 export default CodeBlock;
+// class CodeBlock extends React.Component {
+//   state = {};
+
+//   render() {
+//     const { filename, lang, children } = this.props;
+//     return (
+//       <StaticQuery
+//         query={codeQuery}
+//         render={data => {
+//           const files = getFiles(data);
+//           const source = files[[filename]];
+//           return (
+//             <div>
+//               <p>hey</p>
+//               <Jupyter file={source} language={lang} />
+//             </div>
+//           );
+//         }}
+//       />
+//     );
+//   }
+// }
+
+// export default CodeBlock;
 
 const codeQuery = graphql`
   {

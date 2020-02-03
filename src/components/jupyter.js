@@ -7,7 +7,7 @@ import {
   standardRendererFactories
 } from "@jupyterlab/rendermime";
 import EventContext from "../context/server_events";
-import classes from "../styles/jupyter.css";
+import classes from "../styles/codemirror.css";
 
 class Jupyter extends React.Component {
   static contextType = EventContext;

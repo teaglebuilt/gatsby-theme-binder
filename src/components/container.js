@@ -8,12 +8,6 @@ const Container = ({ children }) => {
   const { data, setData, settings, setSettings } = useEvents();
   const { repo, branch, kernelType } = useMetadata();
 
-  useEffect(() => {
-    requestBinder(repo, branch, `https://mybinder.org`).then(settings =>
-      requestKernel(settings)
-    );
-  }, []);
-
   const requestBinder = (repo, branch, url) => {
     const binderUrl = `${url}/build/gh/${repo}/${branch}`;
     console.log("building", { binderUrl });
@@ -61,7 +55,9 @@ const Container = ({ children }) => {
   };
 
   return (
-    <EventsContext.Provider value={{ data, settings }}>
+    <EventsContext.Provider
+      value={{ data, settings, repo, branch, requestBinder, requestKernel }}
+    >
       {children}
     </EventsContext.Provider>
   );
