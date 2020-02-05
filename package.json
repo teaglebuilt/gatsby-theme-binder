@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-theme-binder",
+  "name": "@teaglebuilt/gatsby-theme-binder",
   "author": "Dillan Teagle",
   "keywords": [
     "gatsby",
@@ -18,14 +18,14 @@
     "develop": "gatsby develop"
   },
   "peerDependencies": {
-    "@loadable/component": "^5.12.0",
     "gatsby": "^2.19.12",
+    "gatsby-source-filesystem": "^2.1.48",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "gatsby": "^2.19.12",
-    "gatsby-source-filesystem": "^2.1.48",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   },
@@ -33,12 +33,10 @@
     "@jupyterlab/outputarea": "^1.2.2",
     "@jupyterlab/rendermime": "^1.2.1",
     "@jupyterlab/services": "^4.2.0",
-    "@loadable/component": "^5.12.0",
-    "@loadable/webpack-plugin": "^5.12.0",
     "@phosphor/widgets": "^1.9.3",
     "browser-monads": "^1.0.0",
     "codemirror": "^5.51.0",
-    "prop-types": "^15.7.2",
+    "gatsby-source-filesystem": "^2.1.48",
     "rehype-react": "^4.0.1"
   }
 }
