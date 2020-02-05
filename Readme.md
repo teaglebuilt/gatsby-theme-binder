@@ -1,5 +1,7 @@
 # Gatsby Theme Binder
 
+[![npm version](http://img.shields.io/npm/v/REPO.svg?style=flat)](https://www.npmjs.com/package/@teaglebuilt/gatsby-theme-binder "View this project on npm")
+
 > Use Jupyter Kernels with Server Sent Events to power code execution in remark code blocks. Using mybinder.org as a source to build up the docker image for the requested kernel
 
 // Note: this is in development and not yet packaged. Will be available soon...
