@@ -260,9 +260,6 @@ class Jupyter extends React.Component {
             this.inputRef = x;
           }}
         />
-        {this.props.msgButton && (
-          <button onClick={this.state.runCode}>{this.props.msgButton}</button>
-        )}
         {this.props.actions && this.props.actions(this.state)}
         <div
           className={classes.output}
