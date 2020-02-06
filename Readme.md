@@ -1,10 +1,26 @@
-# Gatsby Theme Binder
-
-[![npm version](http://img.shields.io/npm/v/REPO.svg?style=flat)](https://www.npmjs.com/package/@teaglebuilt/gatsby-theme-binder "View this project on npm")
-
-> Use Jupyter Kernels with Server Sent Events to power code execution in remark code blocks. Using mybinder.org as a source to build up the docker image for the requested kernel
-
-// Note: this is in development and not yet packaged. Will be available soon...
+<div align="center">
+  <h1 style="margin-bottom: 0;">Gatsby Theme Binder</h1>
+  <p style="margin-top: 1em; margin-bottom: 2em; font-size: large;">
+    Power your gatsby site with kernels from jupyter
+    <a href="https://mybinder.org" alt="drf" target="_blank" rel="noreferrer">
+      Powered by mybinder.org
+    </a>
+    <div>
+        <img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fteaglebuilt%2Fgatsby-theme-binder">
+        <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/DillanTeagle?style=social">
+        <img src="https://img.shields.io/github/watchers/teaglebuilt/gatsby-theme-binder?style=social">
+        <img src="https://img.shields.io/github/stars/teaglebuilt/gatsby-theme-binder?style=social">
+    </div>
+    <div>
+      <a href="https://img.shields.io/npm/v/@teaglebuilt/gatsby-theme-binder">
+        <img alt="npm" src="https://img.shields.io/npm/v/@teaglebuilt/gatsby-theme-binder">
+      </a>
+      <img alt="npm peer dependency version" src="https://img.shields.io/npm/dependency-version/@teaglebuilt/gatsby-theme-binder/peer/gatsby-source-filesystem">
+      <img alt="npm peer dependency version" src="https://img.shields.io/npm/dependency-version/@teaglebuilt/gatsby-theme-binder/peer/gatsby">
+      <img alt="npm peer dependency version" src="https://img.shields.io/npm/dependency-version/@teaglebuilt/gatsby-theme-binder/peer/react">
+      <img alt="npm peer dependency version" src="https://img.shields.io/npm/dependency-version/@teaglebuilt/gatsby-theme-binder/peer/react-dom">
+  </div>
+</div>
 
 # Install
 
