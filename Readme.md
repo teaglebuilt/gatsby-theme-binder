@@ -6,6 +6,9 @@
       Powered by mybinder.org
     </a>
     <div>
+        <img src="https://raw.githubusercontent.com/teaglebuilt/gatsby-theme-binder/master/assets/imgonline-com-ua-twotoone-6B8knnTJ7Z.jpg">
+    </div>
+    <div>
         <img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fteaglebuilt%2Fgatsby-theme-binder">
         <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/DillanTeagle?style=social">
         <img src="https://img.shields.io/github/watchers/teaglebuilt/gatsby-theme-binder?style=social">
