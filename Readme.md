@@ -58,3 +58,41 @@ plugins: [
 - types - Your code files will load into graphql so make sure and reference any file types that you want to include that might exist in the code folder.
 
 - binder - list the repo, branch, and kernel that you wish to connect to when binder has launched the docker image with the given kernel.
+
+### How to import the markdown component
+
+import loadAst and pass in the htmlAst to render as markdown. Example below
+
+```js
+import React from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/layout";
+import { loadAst } from "@teaglebuilt/gatsby-theme-binder/src/markdown";
+
+export const query = graphql`
+  query($Slug: String) {
+    markdownRemark(fields: { slug: { eq: $Slug } }) {
+      htmlAst
+      frontmatter {
+        id
+        title
+        description
+      }
+    }
+  }
+`;
+
+const PostTemplate = ({ data }) => {
+  const markdown = data.markdownRemark;
+  const { frontmatter, htmlAst } = markdown;
+  const { title, description } = frontmatter;
+  const html = loadAst(htmlAst);
+  return (
+    <Layout title={title} description={description}>
+      {html}
+    </Layout>
+  );
+};
+
+export default PostTemplate;
+```

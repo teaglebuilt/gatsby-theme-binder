@@ -65,18 +65,6 @@ class CodeBlock extends React.Component {
                   actions={({ runCode }) => (
                     <>
                       <Button onClick={() => runCode()}>Run Code</Button>
-                      {/* {testFile && (
-                                                <Button
-                                                    variant="primary"
-                                                    onClick={() =>
-                                                        runCode(value =>
-                                                            makeTest(testTemplate, testFile, value)
-                                                        )
-                                                    }
-                                                >
-                                                    Submit
-                                                </Button>
-                                            )} */}
                     </>
                   )}
                 >
