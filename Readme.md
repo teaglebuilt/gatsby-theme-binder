@@ -37,7 +37,9 @@ The theme will connect to a launched docker image of your chosen github reposito
 # Install
 
 ```
-npm install gatsby-theme-binder
+
+npm install @teaglebuilt/gatsby-theme-binder
+
 ```
 
 gatsby-config.js
