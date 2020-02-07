@@ -25,29 +25,38 @@
   </div>
 </div>
 
+This project was initially inspired by [Min RK](https://github.com/minrk)'s
+[Thebelab](https://github.com/minrk/thebelab) package. Then finding [Juniper](https://github.com/ines/juniper). The goal is take this functionality wrapped into a gatsby package that allows for customization and accesibility.
+
+# How it works
+
+The theme will connect to a launched docker image of your chosen github repository as a jupyter notebook. An active connection will persist to the given kernel that is active in your notebook. You can choose which kernel to connect to in your gatsby config. You can use this theme just for a source connection with server sent events, or you can also import the interactive text editor and execute / render results from the kernel itself as a remark component. There are further instructions below.
+
+> Note, this is my first gatsby theme and I am not sure if this is the most effective approach. I would appreciate any feedback on how this theme could improve in terms of usage and accesibility. Thankyou for testing this out and please get in touch with me for feedback.
+
 # Install
 
-yarn add gatsby-theme-binder
-
+```
 npm install gatsby-theme-binder
+```
 
 gatsby-config.js
 
-```
+```js
 plugins: [
   {
     resolve: `gatsby-theme-binder`,
     options: {
-        contentPath: "content",
-        types: ["py"],
-        binder: {
-          repo: "teaglebuilt/Cookbook",
-          branch: "master",
-          kernelType: "python3"
-        }
-    },
-  },
-]
+      contentPath: "content",
+      types: ["py"],
+      binder: {
+        repo: "teaglebuilt/Cookbook",
+        branch: "master",
+        kernelType: "python3"
+      }
+    }
+  }
+];
 ```
 
 - contentPath - name of parent directory where two folders will be created within.
