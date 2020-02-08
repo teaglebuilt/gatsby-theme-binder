@@ -9,17 +9,28 @@
         <img src="https://raw.githubusercontent.com/teaglebuilt/gatsby-theme-binder/master/assets/imgonline-com-ua-twotoone-6B8knnTJ7Z.jpg">
     </div>
     <div>
-        <img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fteaglebuilt%2Fgatsby-theme-binder">
-        <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/DillanTeagle?style=social">
-        <img src="https://img.shields.io/github/watchers/teaglebuilt/gatsby-theme-binder?style=social">
-        <img src="https://img.shields.io/github/stars/teaglebuilt/gatsby-theme-binder?style=social">
+        <a href="https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fteaglebuilt%2Fgatsby-theme-binder">
+          <img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2Fteaglebuilt%2Fgatsby-theme-binder">
+        </a>
+        <a href="https://twitter.com/intent/follow?screen_name=TeagleDillan">
+          <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/TeagleDillan?style=social">
+        </a>
+        <a href="https://github.com/teaglebuilt/gatsby-theme-binder">
+          <img src="https://img.shields.io/github/watchers/teaglebuilt/gatsby-theme-binder?style=social">
+        </a>
+        <a href="https://github.com/teaglebuilt/gatsby-theme-binder">
+          <img src="https://img.shields.io/github/stars/teaglebuilt/gatsby-theme-binder?style=social">
+        </a>
     </div>
     <div>
       <a href="https://img.shields.io/npm/v/@teaglebuilt/gatsby-theme-binder">
         <img alt="npm" src="https://img.shields.io/npm/v/@teaglebuilt/gatsby-theme-binder">
       </a>
+      <a href="https://www.gatsbyjs.org/packages/@teaglebuilt/gatsby-theme-binder">
+        <img alt="npm peer dependency version" src="https://img.shields.io/npm/dependency-version/@teaglebuilt/gatsby-theme-binder/peer/gatsby">
+      </a>
+      <img src="https://img.shields.io/npm/dw/@teaglebuilt/gatsby-theme-binder">
       <img alt="npm peer dependency version" src="https://img.shields.io/npm/dependency-version/@teaglebuilt/gatsby-theme-binder/peer/gatsby-source-filesystem">
-      <img alt="npm peer dependency version" src="https://img.shields.io/npm/dependency-version/@teaglebuilt/gatsby-theme-binder/peer/gatsby">
       <img alt="npm peer dependency version" src="https://img.shields.io/npm/dependency-version/@teaglebuilt/gatsby-theme-binder/peer/react">
       <img alt="npm peer dependency version" src="https://img.shields.io/npm/dependency-version/@teaglebuilt/gatsby-theme-binder/peer/react-dom">
   </div>
