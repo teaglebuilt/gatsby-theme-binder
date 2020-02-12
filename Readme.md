@@ -58,7 +58,7 @@ gatsby-config.js
 ```js
 plugins: [
   {
-    resolve: `gatsby-theme-binder`,
+    resolve: `@teaglebuilt/gatsby-theme-binder`,
     options: {
       contentPath: "content",
       types: ["py"],
