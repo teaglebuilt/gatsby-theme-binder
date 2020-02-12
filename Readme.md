@@ -72,6 +72,9 @@ plugins: [
 ];
 ```
 
+## NOTE: If you added a filetype to the types option, you will see an error when you bring up the browser on localhost. This is because the theme created the folder for code, but there is not a file in the directory for the given filetype. Add a file with some code and the error will disappear. This is because the files are loaded into graphql to be queried in the componenmt.
+
+
 - contentPath - name of parent directory where two folders will be created within.
 
   - posts ..markdown folder
